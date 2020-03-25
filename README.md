@@ -2,11 +2,11 @@
 Para la configuracion hacer lo siguiente
 
 1. en el archivo ./apache/docker-compose.yaml y el archivo ./php/docker-compose.yaml 
-    a. ir a donde dice volume
-        cambiar ../../flowbusiness_co por la carpeta donde se encuentre flowbusiness
-        - ../../flowbusiness_co:/usr/local/apache2/htdocs/flowbusiness_co
-        cambiar ../../cwbusiness.com/core por la carpeta donde se encuentre el core de cwcbusiness
-        - ../../cwbusiness.com/core:/usr/local/apache2/htdocs/cwbusiness
+    - ir a donde dice volume 
+        - cambiar ../../flowbusiness_co por la carpeta donde se encuentre flowbusiness
+            - ../../flowbusiness_co:/usr/local/apache2/htdocs/flowbusiness_co
+        - cambiar ../../cwbusiness.com/core por la carpeta donde se encuentre el core de cwcbusiness
+            - ../../cwbusiness.com/core:/usr/local/apache2/htdocs/cwbusiness
 
 Ejecutar los siguientes comandos:
 
