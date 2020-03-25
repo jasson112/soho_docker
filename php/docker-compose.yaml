@@ -1,0 +1,19 @@
+version: "3"
+
+networks:
+  default:
+    external:
+      name: cw_net
+
+services:
+  cw-php:
+    container_name: cw-php
+    build:
+      context: ../php/
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+    volumes:
+      - ../../flowbusiness_co:/usr/share/nginx/html/flowbusiness_co
+      - ../../cwbusiness.com/core:/usr/share/apache2/htdocs/cwbusiness
+      - ./logs:/var/log/php/fpm-error.log
