@@ -14,6 +14,6 @@ services:
     ports:
       - "9000:9000"
     volumes:
-      - ../../flowbusiness_co:/usr/share/nginx/html/flowbusiness_co
-      - ../../cwbusiness.com/core:/usr/share/apache2/htdocs/cwbusiness
-      - ./logs:/var/log/php/fpm-error.log
+      - ../../dock-roboto/flowbusiness_co:/usr/share/apache2/htdocs/flowbusiness_co:delegated
+      - ../../cwbusiness.com/core:/usr/share/apache2/htdocs/cwbusiness:delegated
+      - ./logs:/var/log/php:delegated
