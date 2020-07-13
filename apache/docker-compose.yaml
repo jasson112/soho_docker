@@ -15,10 +15,10 @@ services:
       - "8003:8002"
       - "8002:8002"
       - "80:80"
-      - "443:443"
     volumes:
       - ../../dock-roboto/flowbusiness_co:/usr/local/apache2/htdocs/flowbusiness_co:delegated
-      - ../../cwbusiness.com/core:/usr/local/apache2/htdocs/cwbusiness:delegated
+      - ../../dock-roboto/cwnetworks.com:/usr/local/apache2/htdocs/cwnetworks.com:delegated
+      - ../../dock-roboto/cwbusiness.com:/usr/local/apache2/htdocs/cwbusiness.com:delegated
       - ./httpd/logs:/usr/local/apache2/logs/:delegated
       #- ./conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
       - ./httpd/sites-enabled:/usr/local/apache2/sites-enabled:delegated

@@ -15,5 +15,7 @@ services:
       - "9000:9000"
     volumes:
       - ../../dock-roboto/flowbusiness_co:/usr/share/apache2/htdocs/flowbusiness_co:delegated
+      - ../../dock-roboto/cwnetworks.com:/usr/share/apache2/htdocs/cwnetworks.com:delegated
+      - ../../dock-roboto/cwbusiness.com:/usr/share/apache2/htdocs/cwbusiness.com:delegated
       - ../../cwbusiness.com/core:/usr/share/apache2/htdocs/cwbusiness:delegated
       - ./logs:/var/log/php:delegated
