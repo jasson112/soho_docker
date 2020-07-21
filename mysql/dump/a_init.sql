@@ -1,1 +1,0 @@
-CREATE DATABASE IF NOT EXISTS `negocios_masmovilpanama_com`;
