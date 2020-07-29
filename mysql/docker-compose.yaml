@@ -21,3 +21,4 @@ services:
     volumes:
       - ./db:/var/lib/mysql:delegated
       - ./dump:/docker-entrypoint-initdb.d:delegated
+      - ./mysqlconf:/etc/mysql/conf.d
