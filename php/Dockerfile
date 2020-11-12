@@ -22,4 +22,4 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | apt-get install -y nodejs
 
 WORKDIR /usr/share/apache2/htdocs/flowbusiness_co
 
-COPY --from=composer /usr/bin/composer /usr/bin/composer
+COPY --from=composer:1 /usr/bin/composer /usr/bin/composer

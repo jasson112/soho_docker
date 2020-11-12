@@ -19,6 +19,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_PASSWORD: root
     volumes:
+      #removing this only if is necesary
       - ./db:/var/lib/mysql:delegated
       - ./dump:/docker-entrypoint-initdb.d:delegated
       - ./mysqlconf:/etc/mysql/conf.d
